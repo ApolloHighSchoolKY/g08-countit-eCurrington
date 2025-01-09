@@ -1,4 +1,4 @@
-//© A+ Computer Science
+//ï¿½ A+ Computer Science
 // www.apluscompsci.com
 
 //array delete example
@@ -14,16 +14,18 @@ public class ArrayCount
 	public static int countIt( int[] iRay, int val )
 	{
 		int count=0;
-
-
-
+		for(int bob: iRay)
+			if(bob==val)
+				count++;
 		return count;
 	}
 
 	public static void printIt( int[] iRay  )
 	{
-
-
+		System.out.print("[");
+		for(int i: iRay)
+			System.out.print(i + " ");
+		System.out.print("]");
 	}
 
 	public static void main(String[] args)
